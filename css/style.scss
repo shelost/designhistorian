@@ -1,0 +1,83 @@
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+    border: none;
+    background: #0059ff;
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:hover{
+        background: #003cff;
+    }
+}
+
+// Desktop
+
+@media screen and (min-width: 800px){
+
+    #main{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #1e1e1f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            height: 100px;
+        }
+
+        h2{
+            font-size: 20px;
+            font-weight: 100;
+            color: rgba(white, 0.3);
+        }
+    }
+}
+
+
+// Mobile
+
+@media screen and (max-width: 800px){
+
+    #main{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #1e1e1f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 80vw;
+        }
+
+        h2{
+            font-size: 14px;
+            font-weight: 100;
+            color: rgba(white, 0.3);
+        }
+    }
+}
